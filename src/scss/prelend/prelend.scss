@@ -1,3 +1,7 @@
+.wrap {
+  overflow: hidden;
+}
+
 // Pinup ----------------------------------------------------------------
 
 .pinup {
@@ -8,23 +12,24 @@
   align-items: center;
   justify-content: center;
   &__logo {
+    pointer-events: none;
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 7%;
     transform: translate(-50%, -50%);
     z-index: 1;
     width: 15vw;
-    height: 15vw;
+    height: 10vw;
     object-fit: contain;
     @media (max-width: 556px) {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
       object-fit: contain;
-      top: 8%;
+      top: 17%;
     }
     @media (max-width: 380px) {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
     }
   }
   &__bg {
@@ -54,7 +59,7 @@
 .pinup-popup {
   border-radius: 4vw;
   border: 0.2vw solid rgba(117, 0, 0, 0.19);
-  background: rgba(7, 151, 130, 0.4392156863);
+  background: rgb(4 63 54 / 44%);
   backdrop-filter: blur(0.5vw);
   position: absolute;
   top: 45%;
@@ -158,8 +163,8 @@
     transition: all 0.4s;
     animation: pulse infinite 1.5s;
     &.color {
-      background: #0bc5ae;
-      box-shadow: 12px 12px 12px rgba(11, 197, 174, 0.5);
+      background: #0ab8a3;
+   
     }
 
     @keyframes pulse {
@@ -219,6 +224,7 @@
   align-items: center;
   justify-content: center;
   &__logo {
+    pointer-events: none;
     position: absolute;
     left: 50%;
     top: 8%;
@@ -228,14 +234,14 @@
     height: 15vw;
     object-fit: contain;
     @media (max-width: 556px) {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
       object-fit: contain;
-      top: 8%;
+      top: 20%;
     }
     @media (max-width: 380px) {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
     }
   }
   &__bg {
@@ -308,9 +314,6 @@
     width: 100%;
     @media (max-width: 768px) {
       gap: 30px;
-    }
-    @media (max-width: 556px) {
-      gap: 23px;
     }
   }
   &__title {
@@ -402,7 +405,7 @@
       width: 100%;
     }
     @media (max-width: 556px) {
-      padding: 12px 38px;
+      padding: 20px 38px;
       width: 80%;
       font-size: 34px;
       margin: 0 auto;
@@ -430,6 +433,7 @@
   align-items: center;
   justify-content: center;
   &__logo {
+    pointer-events: none;
     position: absolute;
     left: 50%;
     top: 8%;
@@ -439,14 +443,14 @@
     height: 15vw;
     object-fit: contain;
     @media (max-width: 556px) {
-      width: 150px;
-      height: 150px;
+      width: 350px;
+      height: 350px;
       object-fit: contain;
-      top: 8%;
+      top: 20%;
     }
     @media (max-width: 380px) {
-      width: 150px;
-      height: 150px;
+      width: 300px;
+      height: 300px;
     }
   }
   &__bg {
@@ -521,7 +525,7 @@
       gap: 30px;
     }
     @media (max-width: 556px) {
-      gap: 23px;
+      gap: 30px;
     }
   }
   &__title {
@@ -613,7 +617,7 @@
       width: 100%;
     }
     @media (max-width: 556px) {
-      padding: 12px 38px;
+      padding: 20px 38px;
       width: 80%;
       font-size: 34px;
       margin: 0 auto;

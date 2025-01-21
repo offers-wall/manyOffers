@@ -8,7 +8,7 @@ function gclid() {
   const urlParams = formattedUrl.split("?")[1];
 
   window.addEventListener("load", function () {
-    const links = document.querySelectorAll(".popup__link");
+    const links = document.querySelectorAll(".link");
 
     links.forEach((link) => {
       let url = new URL(link.href);
