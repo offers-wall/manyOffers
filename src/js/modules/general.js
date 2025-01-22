@@ -1,6 +1,7 @@
-export const domen = "https://riversofblood-blade.com/";
-export const prelend = "win1";
-export const git = "https://offers-wall.github.io/manyOffers/";
+export const domen = "https://phenomenixs.com";
+
+export const prelend = "pinup";
+export const git = "offers-wall.github.io";
 
 export const layouts = {
   win1: {
