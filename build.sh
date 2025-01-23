@@ -73,4 +73,4 @@ curl -X POST "https://api.asana.com/api/1.0/tasks/$TASK_ID/attachments" \
   -H "Authorization: Bearer $ASANA_API_KEY" \
   -F "file=@$PROJECT_PATH/updates/$ARCHIVE_NAME;type=application/zip"
 
-echo "Архив $ARCHIVE_NAME успешно прикреплен к задаче https://app.asana.com/0/$TASK_ID"
+echo "Архив $ARCHIVE_NAME успешно прикреплен к задаче $TASK_ID"
