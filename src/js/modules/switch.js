@@ -1,5 +1,5 @@
-import { git, prelend } from "./general";
-import { layouts } from "./general";
+import { git, prelend } from "../../../gulp/config/layouts";
+import { layouts } from "../../../gulp/config/layouts";
 
 export function Switch() {
   const buttons = document.querySelectorAll(".menu__link");
@@ -22,14 +22,5 @@ export function Switch() {
         }
       });
     });
-  } else {
-    wrap.innerHTML = layouts[prelend].content;
-    document.title = layouts[prelend].title;
-    const link =
-      document.querySelector('link[rel="icon"]') ||
-      document.createElement("link");
-    link.rel = "icon";
-    link.href = layouts[prelend].favicon;
-    document.head.appendChild(link);
   }
 }
