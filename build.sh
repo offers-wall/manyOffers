@@ -3,13 +3,14 @@
 # Переменные для замены
 PRELEND=$1
 DOMEN=$2
+TASK_ID=$3  # Получаем TASK_ID через параметр командной строки
 
 # Путь к проекту
 PROJECT_PATH="/Users/user/Documents/Sites/Work/Vadim/Prelends/ManyOffers"
 
 # Проверяем, переданы ли параметры
-if [ -z "$PRELEND" ] || [ -z "$DOMEN" ]; then
-  echo "Usage: ./build.sh <PRELEND> <DOMEN>"
+if [ -z "$PRELEND" ] || [ -z "$DOMEN" ] || [ -z "$TASK_ID" ]; then
+  echo "Usage: ./build.sh <PRELEND> <DOMEN> <TASK_ID>"
   exit 1
 fi
 
@@ -39,8 +40,37 @@ ARCHIVE_NAME="${PRELEND}_${DOMEN//[:\/.]/_}.zip"
 # Убираем лишние символы "__" в домене
 ARCHIVE_NAME="${ARCHIVE_NAME//__/_}"
 
-# Создаем архив
-zip -r "$PROJECT_PATH/updates/$ARCHIVE_NAME" "$PROJECT_PATH/dist"
+# Проверка папки dist
+DIST_PATH="$PROJECT_PATH/dist"
+if [ ! -d "$DIST_PATH" ]; then
+  echo "Ошибка: Папка dist не найдена!"
+  exit 1
+fi
+
+# Переходим в папку dist, чтобы архивировать содержимое без полного пути
+cd "$DIST_PATH" && tar -cvf "$PROJECT_PATH/updates/$ARCHIVE_NAME" ./*
+
+
+# Создаем архив только с содержимым папки dist без пути к родительским директориям
+echo "Создаю архив: $PROJECT_PATH/updates/$ARCHIVE_NAME"
+zip -r "$PROJECT_PATH/updates/$ARCHIVE_NAME" ./*
+
+# Проверка существования архива перед отправкой
+if [ ! -f "$PROJECT_PATH/updates/$ARCHIVE_NAME" ]; then
+  echo "Ошибка: Архив не найден!"
+  exit 1
+fi
 
 # Сообщение о завершении
 echo "Сборка завершена для PRELEND=$PRELEND с DOMEN=$DOMEN. Архив: $ARCHIVE_NAME."
+
+# Отправка архива в Asana
+ASANA_API_KEY="2/1207383441291604/1209227316720762:740806b4e51448663b2945b0267b489f"  # Ваш новый API ключ
+
+# Отправка файла в Asana
+echo "Отправка архива в Asana..."
+curl -X POST "https://api.asana.com/api/1.0/tasks/$TASK_ID/attachments" \
+  -H "Authorization: Bearer $ASANA_API_KEY" \
+  -F "file=@$PROJECT_PATH/updates/$ARCHIVE_NAME;type=application/zip"
+
+echo "Архив $ARCHIVE_NAME успешно прикреплен к задаче https://app.asana.com/0/$TASK_ID"
