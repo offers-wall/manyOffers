@@ -120,4 +120,43 @@ export const layouts = {
     title: "Pinup - Bonus 1 000 AZN + 250FS",
     favicon: "images/pinup/favicon.png",
   },
+  aviator3: {
+    content: `
+    <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20250123161946" />
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+    <section class="aviatorA3">
+  <img class="aviatorA3__logo" src="./images/aviator3/logo.svg" alt="" />
+  <img class="aviatorA3__airplane" src="./images/aviator3/airplane.png" alt="" />
+  <img class="aviatorA3__arrows" src="./images/aviator3/arrows.png" alt="" />
+  <img class="aviatorA3__arrows-mobile" src="./images/aviator3/mobileArrows.png" alt="" />
+  <div class="aviatorA3__popup popup-aviatorA3">
+    <div class="popup-aviatorA3__content">
+      <h1 class="popup-aviatorA3__title">Sizin 18 yaşınız var?</h1>
+      <div class="popup-aviatorA3__wrap">
+        <a class="link popup-aviatorA3__link" href="\${domen}/prev/index.html">Bəli</a>
+        <a class="link popup-aviatorA3__link red" href="\${domen}/prev/index.html">Xeyr</a>
+      </div>
+    </div>
+  </div>
+</section>
+      </div>
+      </main>
+    </div>
+    <script src="js/app.min.js" defer="defer"></script>
+  </body>
+</html>
+    `,
+    title: "Aviator",
+    favicon: "images/aviator3/favicon.png",
+  },
 };

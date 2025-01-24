@@ -1,9 +1,8 @@
-import { zipDist } from "./zipDist.js";  
+import { zipDist } from "./zipDist.js";
 import gulp from "gulp";
 const { series } = gulp;
-import { layouts } from "../config/layouts.js";
+import { layouts } from "../../src/js/modules/data.html.js";
 import fs from "fs";
-
 
 export const prelend = (done) => {
   const selectedLayout = layouts[app.prelend];
@@ -29,6 +28,12 @@ export const prelend = (done) => {
     );
   }
 
+  // Добавляем подключение стилей для конкретного прелендинга
+  content = content.replace(
+    /<\/head>/,
+    `<link rel="stylesheet" href="css/${app.prelend}.css" />\n</head>`
+  );
+
   if (!fs.existsSync("dist")) fs.mkdirSync("dist");
 
   fs.writeFileSync("dist/index.html", content);
@@ -36,6 +41,7 @@ export const prelend = (done) => {
   console.log(`Собран prelend: ${app.prelend}, с доменом: ${app.domen}`);
   done();
 };
+
 
 // Экспортируем серию задач
 export const buildPrelend = series(prelend, zipDist);

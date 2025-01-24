@@ -1,5 +1,4 @@
-import { git, prelend } from "../../../gulp/config/layouts";
-import { layouts } from "../../../gulp/config/layouts";
+import { git, layouts } from "./data.html";
 
 export function Switch() {
   const buttons = document.querySelectorAll(".menu__link");

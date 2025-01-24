@@ -2,7 +2,7 @@ import { isWebp } from "./modules";
 import { Switch } from "./modules/switch";
 import { menu } from "./modules/menu";
 import { gclid } from "./modules/gclid";
-import { git } from "../../gulp/config/layouts";
+import { git } from "./modules/data.html";
 
 if (location.hostname === "localhost" || location.hostname === git) {
   menu();
