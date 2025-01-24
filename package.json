@@ -75,6 +75,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "child_process": "^1.0.2",
     "dotenv": "^16.4.7",
     "minimist": "^1.2.8",
     "swiper": "^8.4.5"

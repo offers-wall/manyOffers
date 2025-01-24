@@ -15,6 +15,7 @@ export function menu() {
     { id: 2, tag: "mostbet" },
     { id: 3, tag: "pinup" },
     { id: 4, tag: "aviator3" },
+    { id: 5, tag: "manyLogo" },
   ];
 
   wrapMenu.innerHTML = openButton + menuHTML;
@@ -33,7 +34,7 @@ export function menu() {
 
   const menuList = document.querySelector(".menu__list");
 
-  items.forEach((item) => {
+  items.reverse().forEach((item) => {
     const menuItem = document.createElement("li");
     menuItem.innerHTML = `<button data-layout=${item.tag} class="menu__link">${item.tag}</button>`;
     menuList.appendChild(menuItem);

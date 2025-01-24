@@ -1,7 +1,7 @@
 .menu {
   background: linear-gradient(180deg, #090d33 0%, #00010e 100%);
   position: fixed;
-  z-index: 200;
+  z-index: 9999999;
   height: 100%;
   top: 0%;
   display: flex;
@@ -58,6 +58,7 @@
   font-size: 55px;
   position: fixed;
   left: 0;
+  z-index: 9999;
   background: red;
   color: #fff;
   display: flex;

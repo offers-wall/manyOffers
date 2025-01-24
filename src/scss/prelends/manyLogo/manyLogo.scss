@@ -1,0 +1,211 @@
+.manyLogo {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 8vh;
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 556px) {
+    padding-top: 85px;
+    gap: 10vh;
+  }
+  &__logo {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    @media (max-width: 556px) {
+      right: 15px;
+      top: 15px;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+      @media (max-width: 556px) {
+        font-size: 32px;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: -15px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 556px) {
+        font-size: 16px;
+        margin-top: unset;
+      }
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5vw;
+    border-radius: 30px;
+    background: rgb(33 33 42 / 80%);
+    backdrop-filter: blur(40px);
+    padding: 1vw 3vw;
+    width: 75vw;
+    height: 30vw;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 4;
+    @media (max-width: 1024px) {
+      width: 90%;
+      padding: 20px 30px;
+      height: 400px;
+    }
+
+    @media (max-width: 556px) {
+      padding: 0 15px;
+      height: auto;
+      background: unset;
+      box-shadow: unset;
+      backdrop-filter: unset;
+      position: static;
+      transform: unset;
+      -webkit-transform: unset;
+      -moz-transform: unset;
+      -ms-transform: unset;
+      -o-transform: unset;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    gap: 50px;
+
+    @media (max-width: 556px) {
+      gap: 20px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      gap: 10px;
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__top {
+    width: 100%;
+    h1 {
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      span {
+        background: var(
+          --orange,
+          linear-gradient(180deg, #ffd145 0%, #de6500 100%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @media (max-width: 556px) {
+        line-height: 110%;
+        font-size: 45px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__bottom {
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  &__bg {
+    pointer-events: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(4px) brightness(50%);
+    -webkit-filter: blur(4px) brightness(50%);
+    object-fit: cover;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 10vw;
+    transition: all 0.4s;
+    border-radius: 10px;
+    span {
+      color: #fff;
+      text-align: center;
+      font-size: 2vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1vw;
+      display: block;
+
+      @media (max-width: 991px) {
+        line-height: 20px;
+        font-size: 32px;
+        width: 100%;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 40px rgba(255, 255, 255, 0.5); /* Добавляем белый box-shadow */
+    }
+    @media (max-width: 991px) {
+      padding: 28px 15px 20px 15px;
+      font-size: 32px;
+      width: 100%;
+    }
+    &--da {
+      background: #3cf200;
+    }
+    &--net {
+      background: red;
+    }
+  }
+}
