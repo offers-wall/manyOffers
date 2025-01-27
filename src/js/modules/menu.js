@@ -16,6 +16,7 @@ export function menu() {
     { id: 3, tag: "pinup" },
     { id: 4, tag: "aviator3" },
     { id: 5, tag: "manyLogo" },
+    { id: 6, tag: "vitrinePL" },
   ];
 
   wrapMenu.innerHTML = openButton + menuHTML;
