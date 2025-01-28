@@ -865,6 +865,7 @@
     )
     3;
   animation: borderRadial var(--d) linear infinite forwards;
+  -webkit-animation: borderRadial var(--d) linear infinite forwards;
 }
 
 .offers-cover-desktop .offer-cover:nth-child(5),

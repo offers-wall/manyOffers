@@ -10,6 +10,9 @@ function gclid() {
   window.addEventListener("load", function () {
     const links = document.querySelectorAll(".link");
 
+    console.log(links);
+    
+
     links.forEach((link) => {
       let url = new URL(link.href);
 

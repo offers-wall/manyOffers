@@ -1,17 +1,15 @@
-#!/bin/bash
 
 # Переменные для замены
 PRELEND=$1
 DOMEN=$2
 TASK_ID=$3  # Получаем TASK_ID через параметр командной строки
-SEND_TO_ASANA=true
 
 # Путь к проекту
 PROJECT_PATH="/Users/user/Documents/Sites/Work/Vadim/Prelends/ManyOffers"
 
 # Проверяем, переданы ли параметры
-if [ -z "$PRELEND" ] || [ -z "$DOMEN" ] || { [ "$SEND_TO_ASANA" = true ] && [ -z "$TASK_ID" ]; }; then
-  echo "Usage: ./build.sh <PRELEND> <DOMEN> <SEND_ASANA>  <TASK_ID>"
+if [ -z "$PRELEND" ] || [ -z "$DOMEN" ] || [ -z "$TASK_ID" ]; then
+  echo "Usage: ./build.sh <PRELEND> <DOMEN> <TASK_ID>"
   exit 1
 fi
 
@@ -22,6 +20,9 @@ echo ".env обновлен: PRELEND=$PRELEND, DOMEN=$DOMEN"
 
 # Переходим в директорию проекта
 cd "$PROJECT_PATH" || { echo "Не удалось перейти в директорию $PROJECT_PATH"; exit 1; }
+
+# Выводим текущую директорию для диагностики
+echo "Текущая директория: $(pwd)"
 
 # Проверяем наличие gulpfile.js
 if [ ! -f gulpfile.js ]; then
@@ -40,6 +41,12 @@ ARCHIVE_PATH="$PROJECT_PATH/updates/$ARCHIVE_NAME"
 if [ -f "$ARCHIVE_PATH" ]; then
   echo "Архив существует и будет удалён: $ARCHIVE_NAME"
   rm "$ARCHIVE_PATH"
+fi
+
+# Проверка прав на запись в директорию
+if [ ! -w "$PROJECT_PATH/updates" ]; then
+  echo "Нет прав на запись в папку updates."
+  exit 1
 fi
 
 # Проверка папки dist
@@ -81,21 +88,14 @@ fi
 # Сообщение о завершении
 echo "Сборка завершена для PRELEND=$PRELEND с DOMEN=$DOMEN. Архив: $ARCHIVE_NAME."
 
+
 # Отправка архива в Asana
-if [ "$SEND_TO_ASANA" = true ]; then
-  ASANA_API_KEY="2/1207383441291604/1209227316720762:2f889568e8ae32535f547b5a18912c78"  # Ваш новый API ключ
-  
-  echo "Отправка архива в Asana..."
-  RESPONSE=$(curl -s -w "%{http_code}" -X POST "https://api.asana.com/api/1.0/tasks/$TASK_ID/attachments" \
-    -H "Authorization: Bearer $ASANA_API_KEY" \
-    -F "file=@$PROJECT_PATH/updates/$ARCHIVE_NAME;type=application/zip" -o /dev/null)
-  
-  if [ "$RESPONSE" -eq 200 ]; then
-    echo "Архив $ARCHIVE_NAME успешно прикреплен к задаче $TASK_ID"
-  else
-    echo "Ошибка: Не удалось отправить архив в Asana. HTTP код: $RESPONSE"
-    exit 1
-  fi
-else
-  echo "Отправка в Asana отключена. Архив $ARCHIVE_NAME не будет отправлен."
-fi
+ASANA_API_KEY="2/1207383441291604/1209227316720762:2f889568e8ae32535f547b5a18912c78"  # Ваш новый API ключ
+
+# Отправка файла в Asana
+echo "Отправка архива в Asana..."
+curl -X POST "https://api.asana.com/api/1.0/tasks/$TASK_ID/attachments" \
+  -H "Authorization: Bearer $ASANA_API_KEY" \
+  -F "file=@$PROJECT_PATH/updates/$ARCHIVE_NAME;type=application/zip"
+
+echo "Архив $ARCHIVE_NAME успешно прикреплен к задаче $TASK_ID"
