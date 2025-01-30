@@ -5,7 +5,7 @@ DOMEN=$2
 TASK_ID=$3  # Получаем TASK_ID через параметр командной строки
 
 # Путь к проекту
-PROJECT_PATH="/Users/user/Documents/Sites/Work/Vadim/Prelends/ManyOffers"
+PROJECT_PATH="D:\Work\Vadim\manyOffers"
 
 # Проверяем, переданы ли параметры
 if [ -z "$PRELEND" ] || [ -z "$DOMEN" ] || [ -z "$TASK_ID" ]; then

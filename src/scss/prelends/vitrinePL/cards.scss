@@ -341,6 +341,11 @@
   color: #fff;
   font-size: 15px;
 }
+.mb {
+  @media (max-width: 991px) {
+    margin-top: 10px;
+  }
+}
 
 .stars-container {
   position: relative;
