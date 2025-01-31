@@ -62,17 +62,13 @@ export const vitrinePL = ` <header class="header">
             class="link get-bonus"
             href="\${domen}/prev/index.html?t1=1"
           >
-            <img
-              class="xon"
-              src="./images/vitrinePL/vitrine/items/xon.svg"
-              alt="robo"
-            />
+           <img class="vulkan" src="./images/vitrinePL/vitrine/items/vulcan.png" alt="robo">
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">500% do 10 000 zł</p>
-          <p class="welcome-3">+ 550 FS</p>
+          <p class="welcome-2">450% do 6000 zł</p>
+          <p class="welcome-3">+ 225 FS</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
@@ -223,16 +219,16 @@ export const vitrinePL = ` <header class="header">
             href="\${domen}/prev/index.html?t1=3"
           >
             <img
-              class="vulkan"
-              src="./images/vitrinePL/vitrine/items/vulcan.png"
+              class="xon"
+              src="./images/vitrinePL/vitrine/items/xon.svg"
               alt="robo"
             />
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">450% do 6000 zł</p>
-          <p class="welcome-3">+ 225 FS</p>
+          <p class="welcome-2">500% do 10 000 zł</p>
+          <p class="welcome-3">+ 550 FS</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
@@ -299,15 +295,15 @@ export const vitrinePL = ` <header class="header">
             href="\${domen}/prev/index.html?t1=4"
           >
             <img
-              src="./images/vitrinePL/vitrine/items/slottica.svg"
+              src="./images/vitrinePL/vitrine/items/slotty.svg"
               alt="robo"
             />
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">200% + 100 FS</p>
-          <p class="welcome-3">Przez 5 dni z rzędu</p>
+          <p class="welcome-2">200%</p>
+          <p class="welcome-3">Za pierwsze 3 depozyty</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
@@ -375,15 +371,15 @@ export const vitrinePL = ` <header class="header">
           >
             <img
               class="slotty"
-              src="./images/vitrinePL/vitrine/items/slotty.svg"
+              src="./images/vitrinePL/vitrine/items/slottica.svg"
               alt="tik"
             />
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">200%</p>
-          <p class="welcome-3">Za pierwsze 3 depozyty</p>
+          <p class="welcome-2">200% + 100 FS</p>
+          <p class="welcome-3">Przez 5 dni z rzędu</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-90">★★★★★</div>
@@ -530,20 +526,16 @@ export const vitrinePL = ` <header class="header">
             href="\${domen}/prev/index.html?t1=1"
             target="_blank"
           >
-            <img
-              class="xon"
-              src="./images/vitrinePL/vitrine/items/xon.svg"
-              alt="xon"
-            />
+         <img class="vulkan" src="./images/vitrinePL/vitrine/items/vulcan.png" alt="robo">
           </a>
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>10.0</span></p>
+          <p class="score mb"><span>10.0</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
             <p class="welcome-1">Bonus Powitalny</p>
-            <p class="welcome-2">500% do 10 000 zł</p>
-            <p class="welcome-3">+ 550 FS</p>
+            <p class="welcome-2">450% do 6000 zł</p>
+            <p class="welcome-3">+ 225 FS</p>
           </div>
           <div class="offer-buttons">
             <a
@@ -679,8 +671,8 @@ export const vitrinePL = ` <header class="header">
             target="_blank"
           >
             <img
-              class="vulkan"
-              src="./images/vitrinePL/vitrine/items/vulcan.png"
+              class="xon"
+              src="./images/vitrinePL/vitrine/items/xon.svg"
               alt="robo"
             />
           </a>
@@ -690,8 +682,8 @@ export const vitrinePL = ` <header class="header">
         <div class="right-side">
           <div class="offer-message">
             <p class="welcome-1">Bonus Powitalny</p>
-            <p class="welcome-2">450% do 6000 zł</p>
-            <p class="welcome-3">+ 225 FS</p>
+            <p class="welcome-2">500% do 10 000 zł</p>
+            <p class="welcome-3">+ 550 FS</p>
           </div>
           <div class="offer-buttons">
             <a
@@ -740,81 +732,12 @@ export const vitrinePL = ` <header class="header">
         <p class="terms"></p>
       </div>
 
-      <div class="offer-cover">
+         <div class="offer-cover">
         <div class="left-side">
           <a
             rel="noopener noreferrer"
             class="link get-bonus"
             href="\${domen}/prev/index.html?t1=4"
-            target="_blank"
-          >
-            <img
-              src="./images/vitrinePL/vitrine/items/slottica.svg"
-              alt="robo"
-            />
-          </a>
-          <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.6</span></p>
-        </div>
-        <div class="right-side">
-          <div class="offer-message">
-            <p class="welcome-1">Bonus Powitalny</p>
-            <p class="welcome-2">200% + 100 FS</p>
-            <p class="welcome-3">Przez 5 dni z rzędu</p>
-          </div>
-          <div class="offer-buttons">
-            <a
-              rel="noopener noreferrer"
-              class="link get-bonus"
-              href="\${domen}/prev/index.html?t1=4"
-              class="get-bonus"
-              target="_blank"
-            >
-              ZAGRAJ TERAZ</a
-            >
-            <a
-              rel="noopener noreferrer"
-              href="https://site.com"
-              class="visit-site"
-              target="_blank"
-              >Visita Robocat</a
-            >
-          </div>
-          <div class="offer-payment">
-            <img
-              class="blick"
-              src="./images/vitrinePL/vitrine/icons/blick.png"
-              alt="blick"
-            />
-            <img src="./images/vitrinePL/vitrine/icons/visa.png" alt="visa2" />
-            <img
-              class="bitcoin"
-              src="./images/vitrinePL/vitrine/icons/bitcoin.png"
-              alt="visa2"
-            />
-            <img
-              src="./images/vitrinePL/vitrine/icons/master.png"
-              alt="master8"
-            />
-            <img
-              class="apple"
-              src="./images/vitrinePL/vitrine/icons/apple.png"
-              alt="apple"
-            />
-            <div class="show-more-btn"></div>
-          </div>
-        </div>
-      </div>
-      <div class="offer-bottom">
-        <p class="terms"></p>
-      </div>
-
-      <div class="offer-cover">
-        <div class="left-side">
-          <a
-            rel="noopener noreferrer"
-            class="link get-bonus"
-            href="\${domen}/prev/index.html?t1=5"
             target="_blank"
           >
             <img
@@ -836,7 +759,7 @@ export const vitrinePL = ` <header class="header">
             <a
               rel="noopener noreferrer"
               class="link get-bonus"
-              href="\${domen}/prev/index.html?t1=5"
+              href="\${domen}/prev/index.html?t1=4"
               class="get-bonus"
               target="_blank"
             >
@@ -884,6 +807,77 @@ export const vitrinePL = ` <header class="header">
           <a
             rel="noopener noreferrer"
             class="link get-bonus"
+            href="\${domen}/prev/index.html?t1=5"
+            target="_blank"
+          >
+            <img
+              src="./images/vitrinePL/vitrine/items/slottica.svg"
+              alt="robo"
+            />
+          </a>
+          <div class="stars-container star-100">★★★★★</div>
+          <p class="score"><span>9.6</span></p>
+        </div>
+        <div class="right-side">
+          <div class="offer-message">
+            <p class="welcome-1">Bonus Powitalny</p>
+            <p class="welcome-2">200% + 100 FS</p>
+            <p class="welcome-3">Przez 5 dni z rzędu</p>
+          </div>
+          <div class="offer-buttons">
+            <a
+              rel="noopener noreferrer"
+              class="link get-bonus"
+              href="\${domen}/prev/index.html?t1=5"
+              class="get-bonus"
+              target="_blank"
+            >
+              ZAGRAJ TERAZ</a
+            >
+            <a
+              rel="noopener noreferrer"
+              href="https://site.com"
+              class="visit-site"
+              target="_blank"
+              >Visita Robocat</a
+            >
+          </div>
+          <div class="offer-payment">
+            <img
+              class="blick"
+              src="./images/vitrinePL/vitrine/icons/blick.png"
+              alt="blick"
+            />
+            <img src="./images/vitrinePL/vitrine/icons/visa.png" alt="visa2" />
+            <img
+              class="bitcoin"
+              src="./images/vitrinePL/vitrine/icons/bitcoin.png"
+              alt="visa2"
+            />
+            <img
+              src="./images/vitrinePL/vitrine/icons/master.png"
+              alt="master8"
+            />
+            <img
+              class="apple"
+              src="./images/vitrinePL/vitrine/icons/apple.png"
+              alt="apple"
+            />
+            <div class="show-more-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="offer-bottom">
+        <p class="terms"></p>
+      </div>
+
+   
+
+      <div class="offer-cover">
+        <div class="left-side">
+          <a
+            rel="noopener noreferrer"
+            class="link get-bonus"
             href="\${domen}/prev/index.html?t1=6"
             target="_blank"
           >
@@ -905,8 +899,8 @@ export const vitrinePL = ` <header class="header">
           <div class="offer-buttons">
             <a
               rel="noopener noreferrer"
-              href="https://lexitechlife.com/prev/index.html?t1=6"
-              class="get-bonus"
+              href="\${domen}/prev/index.html?t1=6"
+              class="get-bonus link"
               target="_blank"
             >
               ZAGRAJ TERAZ</a
