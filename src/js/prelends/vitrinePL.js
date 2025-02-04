@@ -154,7 +154,7 @@ export const vitrinePL = `  <div id="preloader">
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.6</span></p>
+          <p class="score"><span>9.9</span></p>
           <p class="votes">Votes <span>30,931</span></p>
         </div>
         <div class="offer-buttons">
@@ -316,7 +316,7 @@ export const vitrinePL = `  <div id="preloader">
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.9</span></p>
+          <p class="score"><span>9.6</span></p>
           <p class="votes">Votes <span>30,931</span></p>
         </div>
         <div class="offer-buttons">
@@ -613,8 +613,8 @@ export const vitrinePL = `  <div id="preloader">
               alt="tik"
             />
           </a>
-          <div class="stars-container star-90">★★★★★</div>
-          <p class="score"><span>9.5</span></p>
+          <div class="stars-container star-100">★★★★★</div>
+          <p class="score"><span>9.9</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
@@ -763,7 +763,7 @@ export const vitrinePL = `  <div id="preloader">
             />
           </a>
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.9</span></p>
+          <p class="score"><span>9.6</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
@@ -832,8 +832,8 @@ export const vitrinePL = `  <div id="preloader">
               alt="robo"
             />
           </a>
-          <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.6</span></p>
+          <div class="stars-container star-90">★★★★★</div>
+          <p class="score"><span>9.5</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
