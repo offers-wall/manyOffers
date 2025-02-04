@@ -1,4 +1,6 @@
-export const vitrinePL = ` <header class="header">
+export const vitrinePL = `  <div id="preloader">
+      <div id="camera"></div>
+    </div>  <header class="header">
     <div class="header__body">
       <div class="header__top">
         Przetestowane przez ekspertów. Polecane przez graczy.
@@ -125,8 +127,9 @@ export const vitrinePL = ` <header class="header">
         </div>
       </div>
 
-      <div class="offer-cover">
-        <div class="label">
+
+        <div class="offer-cover">
+           <div class="label">
           <span class="label-center"> POPULARNY 🔥</span
           ><span class="label-right"></span><span class="label-bottom"></span>
         </div>
@@ -139,20 +142,19 @@ export const vitrinePL = ` <header class="header">
             href="\${domen}/prev/index.html?t1=2"
           >
             <img
-              class="slotty"
-              src="./images/vitrinePL/vitrine/items/Verde-logo.png"
-              alt="tik"
+              src="./images/vitrinePL/vitrine/items/slotty.svg"
+              alt="robo"
             />
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">5000 zł</p>
-          <p class="welcome-3">+ 220 FS</p>
+          <p class="welcome-2">200%</p>
+          <p class="welcome-3">Za pierwsze 3 depozyty</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.9</span></p>
+          <p class="score"><span>9.6</span></p>
           <p class="votes">Votes <span>30,931</span></p>
         </div>
         <div class="offer-buttons">
@@ -169,7 +171,7 @@ export const vitrinePL = ` <header class="header">
             href="https://site.com"
             class="visit-site"
             target="_blank"
-            >Visita TikiTaka</a
+            >Visita Robocat</a
           >
           <div class="offer-payment">
             <img
@@ -204,6 +206,9 @@ export const vitrinePL = ` <header class="header">
           <span class="right-dot"></span>
         </div>
       </div>
+
+
+    
 
       <div class="offer-cover">
         <div class="label">
@@ -285,7 +290,10 @@ export const vitrinePL = ` <header class="header">
         </div>
       </div>
 
-      <div class="offer-cover">
+
+
+        <div class="offer-cover">
+
         <div class="order-count">4</div>
         <div class="offer-logo">
           <a
@@ -295,19 +303,20 @@ export const vitrinePL = ` <header class="header">
             href="\${domen}/prev/index.html?t1=4"
           >
             <img
-              src="./images/vitrinePL/vitrine/items/slotty.svg"
-              alt="robo"
+              class="slotty"
+              src="./images/vitrinePL/vitrine/items/Verde-logo.png"
+              alt="tik"
             />
           </a>
         </div>
         <div class="offer-message">
           <p class="welcome-1">Bonus Powitalny</p>
-          <p class="welcome-2">200%</p>
-          <p class="welcome-3">Za pierwsze 3 depozyty</p>
+          <p class="welcome-2">5000 zł</p>
+          <p class="welcome-3">+ 220 FS</p>
         </div>
         <div class="offer-rate">
           <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.6</span></p>
+          <p class="score"><span>9.9</span></p>
           <p class="votes">Votes <span>30,931</span></p>
         </div>
         <div class="offer-buttons">
@@ -324,7 +333,7 @@ export const vitrinePL = ` <header class="header">
             href="https://site.com"
             class="visit-site"
             target="_blank"
-            >Visita Robocat</a
+            >Visita TikiTaka</a
           >
           <div class="offer-payment">
             <img
@@ -360,6 +369,7 @@ export const vitrinePL = ` <header class="header">
         </div>
       </div>
 
+    
       <div class="offer-cover">
         <div class="order-count">5</div>
         <div class="offer-logo">
@@ -584,7 +594,8 @@ export const vitrinePL = ` <header class="header">
         <p class="terms"></p>
       </div>
 
-      <div class="offer-cover">
+
+       <div class="offer-cover">
         <div class="label">
           <span class="label-center">POPULARNY 🔥</span
           ><span class="label-right"></span><span class="label-bottom"></span>
@@ -598,18 +609,18 @@ export const vitrinePL = ` <header class="header">
           >
             <img
               class="slotty"
-              src="./images/vitrinePL/vitrine/items/Verde-logo.png"
+              src="./images/vitrinePL/vitrine/items/slotty.svg"
               alt="tik"
             />
           </a>
-          <div class="stars-container star-100">★★★★★</div>
-          <p class="score"><span>9.9</span></p>
+          <div class="stars-container star-90">★★★★★</div>
+          <p class="score"><span>9.5</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
             <p class="welcome-1">Bonus Powitalny</p>
-            <p class="welcome-2">5000 zł</p>
-            <p class="welcome-3">+ 220 FS</p>
+            <p class="welcome-2">200%</p>
+            <p class="welcome-3">Za pierwsze 3 depozyty</p>
           </div>
           <div class="offer-buttons">
             <a
@@ -657,6 +668,8 @@ export const vitrinePL = ` <header class="header">
       <div class="offer-bottom">
         <p class="terms"></p>
       </div>
+
+    
 
       <div class="offer-cover">
         <div class="label">
@@ -732,7 +745,10 @@ export const vitrinePL = ` <header class="header">
         <p class="terms"></p>
       </div>
 
-         <div class="offer-cover">
+
+
+        <div class="offer-cover">
+       
         <div class="left-side">
           <a
             rel="noopener noreferrer"
@@ -742,18 +758,18 @@ export const vitrinePL = ` <header class="header">
           >
             <img
               class="slotty"
-              src="./images/vitrinePL/vitrine/items/slotty.svg"
+              src="./images/vitrinePL/vitrine/items/Verde-logo.png"
               alt="tik"
             />
           </a>
-          <div class="stars-container star-90">★★★★★</div>
-          <p class="score"><span>9.5</span></p>
+          <div class="stars-container star-100">★★★★★</div>
+          <p class="score"><span>9.9</span></p>
         </div>
         <div class="right-side">
           <div class="offer-message">
             <p class="welcome-1">Bonus Powitalny</p>
-            <p class="welcome-2">200%</p>
-            <p class="welcome-3">Za pierwsze 3 depozyty</p>
+            <p class="welcome-2">5000 zł</p>
+            <p class="welcome-3">+ 220 FS</p>
           </div>
           <div class="offer-buttons">
             <a
@@ -802,6 +818,7 @@ export const vitrinePL = ` <header class="header">
         <p class="terms"></p>
       </div>
 
+        
       <div class="offer-cover">
         <div class="left-side">
           <a
